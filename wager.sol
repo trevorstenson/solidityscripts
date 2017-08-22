@@ -22,7 +22,6 @@ contract wager {
     }
 
     event Bet(address indexed _from, uint _value);
-
     event Time(uint _left);
 
     function wager(){
@@ -57,7 +56,6 @@ contract wager {
         remainingTime = gameEnd - now;
         Time(remainingTime);
         return remainingTime;
-        Time(remainingTime);
     }
 
     function gameOver() constant returns(bool) {
